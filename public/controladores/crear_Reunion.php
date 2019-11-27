@@ -75,7 +75,7 @@
 
     //cerrar la base de datos
     $conn->close();
-    echo "<a href='../../admin/vista/usuario/index_usuario.html'>Regresar</a>";
+    echo "<a href='../../admin/vista/usuario/index_usuario.php'>Regresar</a>";
 
     ?>
 </body>
