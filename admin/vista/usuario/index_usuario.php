@@ -15,11 +15,16 @@
     }
     ?>
     <h2>Datos personales </h2>
+    <form class="buscar">
+    <input class="buscar" type="date" id="buscar" name="buscar" value="" placeholder="Fecha..."/>
+    </form>
+  
+  
 
     <div class="control">
         <button><a href='../../../public/vista/crear_Reunion.html'>Crear Reunion</a></button>
         <button><a href='../../../config/cerrar_sesion.php'>Cerrar Sesion</a></button>
-</div>
+    </div>
 
     <table style="width:100%">
         <tr>

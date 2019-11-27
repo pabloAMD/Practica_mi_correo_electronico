@@ -148,3 +148,7 @@ form{
 .control button a:hover{
     color:rgb(103, 191, 202)
 }
+
+.buscar{
+    text-align: left;
+}

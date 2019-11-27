@@ -26,23 +26,19 @@
                 <input type="text" id="fecha" name="fecha" value="<?php echo $row["reu_fecha"]; ?>" disabled />
                 <br>
                 <label for="hora">hora (*)</label>
-                <input type="text" id="hora" name="hora" value="<?php echo $row["reu_hora"];
-                                                                                ?>" disabled />
+                <input type="text" id="hora" name="hora" value="<?php echo $row["reu_hora"];?>" disabled />
                 <br>
                 <label for="lugar">lugar (*)</label>
-                <input type="text" id="lugar" name="lugar" value="<?php echo $row["reu_lugar"];
-                                                                                    ?>" disabled />
+                <input type="text" id="lugar" name="lugar" value="<?php echo $row["reu_lugar"];?>" disabled />
                 <br>
                 <label for="latitud">latitud (*)</label>
-                <input type="text" id="latitud" name="latitud" value="<?php echo $row["reu_latitud"];
-                                                                                    ?>" disabled />
+                <input type="text" id="latitud" name="latitud" value="<?php echo $row["reu_latitud"];?>" disabled />
                 <br>
                 <label for="longitud">longitud (*)</label>
-                <input type="text" id="longitud" name="longitud" value="<?php echo $row["reu_longitud"];
-                                                                                ?>" disabled />
+                <input type="text" id="longitud" name="longitud" value="<?php echo $row["reu_longitud"];?>" disabled />
                 <br>
-              
-                <label for="motivo">motivo  (*)</label>
+
+                <label for="motivo">motivo (*)</label>
                 <input type="email" id="motivo" name="motivo" value="<?php echo $row["reu_motivo"]; ?>" disabled />
                 <br>
 
