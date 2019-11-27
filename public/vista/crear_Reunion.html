@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+        <section>
+    <form id="formulario01" method="POST" action="../controladores/crear_Reunion.php">
+        <label for="fecha_reu">Fecha (*)</label>
+        <input type="text" id="fecha_reu" name="fecha_reu" value="" placeholder="Ingrese la fecha de la reunion  dd-mm-yyyy ..." required />
+        <br>
+        <label for="hora">Hora (*)</label>
+        <input type="text" id="hora" name="hora" value="" placeholder="Ingrese la hora de la reunion
+..." required />
+        <br>
+        <label for="lugar">Lugar (*)</label>
+        <input type="text" id="lugar" name="lugar" value="" placeholder="Ingrese el lugar de la reunion
+..." required />
+        <br>
+        <label for="latitud">Latitud (*)</label>
+        <input type="text" id="latitud" name="latitud" value="" placeholder="Ingrese la latitud..." required />
+        <br>
+        <label for="longitud">Longitud (*)</label>
+        <input type="text" id="longitud" name="longitud" value="" placeholder="Ingrese la longitud
+..." required />
+        <br>
+ 
+        <label for="motivo">Motivo(*)</label>
+        <input type="text" id="motivo" name="motivo" value="" placeholder="Ingrese el motivo de la reunion
+..." required />
+        <br>
+        <label for="observaciones">Observaciones (*)</label>
+        <input type="text" id="observaciones" name="observaciones" value="" placeholder="Ingrese una observacion de la reunion..." required />
+        <br>
+        <input type="submit" id="crear" name="crear" value="Aceptar" />
+        <button><a href='../../admin/vista/usuario/index_usuario.php'>Cancelar</a></button>
+    </form>
+</section>
+</body>
+
+</html>
