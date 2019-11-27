@@ -130,6 +130,9 @@ form{
     
 }
 
+.busqueda{
+    width: 50px;
+}
 .control{
     text-align: right;
 }
@@ -148,7 +151,7 @@ form{
 .control button a:hover{
     color:rgb(103, 191, 202)
 }
-
-.buscar{
-    text-align: left;
+.hola{
+    color: lightcoral;
 }
+

@@ -15,8 +15,8 @@
     }
     ?>
     <h2>Datos personales </h2>
-    <form class="buscar">
-    <input class="buscar" type="date" id="buscar" name="buscar" value="" placeholder="Fecha..."/>
+    <form class="busqueda">
+    <input  type="date" id="buscar" name="buscar" value="" placeholder="Fecha..."/>
     </form>
   
   
