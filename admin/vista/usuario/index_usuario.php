@@ -8,13 +8,18 @@
 </head>
 
 <body>
-<?php
- session_start();
- if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
- header("Location: ../../../public/vista/login.html");
- }
-?>
- <h2>Datos personales </h2>
+    <?php
+    session_start();
+    if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
+        header("Location: ../../../public/vista/login.html");
+    }
+    ?>
+    <h2>Datos personales </h2>
+
+    <div class="control">
+        <button><a href='../../../public/vista/crear_Reunion.html'>Crear Reunion</a></button>
+        <button><a href='../../../config/cerrar_sesion.php'>Cerrar Sesion</a></button>
+</div>
 
     <table style="width:100%">
         <tr>
@@ -30,7 +35,7 @@
 
         </tr>
         <?php
-        
+
         include '../../../config/conexionBD.php';
 
         echo "valor :" . $_SESSION['usu'];
@@ -91,7 +96,7 @@
             <th>Motivo </th>
             <th>Observaciones</th>
             <th>Cargo</th>
-          
+
 
 
 
@@ -144,7 +149,6 @@
                 echo " <td> <a href='invitar.php?invitar=" . $row1['reu_id'] . "'>Invitar</a> </td>";
 
                 echo "</tr>";
-                
             }
         } else {
             echo "<tr>";
@@ -167,10 +171,10 @@
 
 
 
-    
+
     <table style="width:100%">
         <tr>
-       
+
             <th>Fecha de la reunion</th>
             <th>Hora de la reunion</th>
             <th>Lugar</th>
@@ -179,7 +183,7 @@
             <th>Motivo </th>
             <th>Observaciones</th>
             <th>Cargo</th>
-          
+
 
 
 
@@ -214,7 +218,7 @@
             while ($row1 = $result1->fetch_assoc()) {
 
                 echo "<tr>";
-            
+
                 echo " <td>" . $row1["reu_fecha"] . "</td>";
                 echo " <td>" . $row1["reu_hora"] . "</td>";
                 echo " <td>" . $row1["reu_lugar"] . "</td>";
@@ -241,11 +245,10 @@
         ?>
     </table>
 
+    
 
 
 
-    <button><a href='../../../public/vista/crear_Reunion.html'>Crear Reunion</a></button>
-    <button><a href='../../../config/cerrar_sesion.php'>Cerrar Sesion</a></button>
 
 
 

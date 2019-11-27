@@ -28,22 +28,20 @@
 
                 <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
 
-                <label for="id_reunionn">Id de reunion (*)</label>
-                <input type="number" id="id_reunionn" name="id_reunionn" value="<?php echo $row["reu_id"];?>"  />
-                <br>
-                <label for="reunion">Reunion (*)</label>
+                
+                <input type="text" id="id_reunionn" name="id_reunionn" value="<?php echo $row["reu_id"];?>"  />
+               
                 <input type="text" id="reunion" name="reunion" value="<?php echo $row["reu_motivo"];?>" disabled />
-                <br>
-
-                <label for="correo">Correo (*)</label>
-                <input type="text" id="correo" name="correo" value="" required placeholder="Ingrese un correo ..." />
+              
+                <input type="text" id="correo" name="correo" value="" required placeholder="Correo ..." />
                 <br>
                 
                 
 
                 <input type="submit" id="invitar" name="invitar" value="invitar" />
-                <button><a href='index_usuario.php'>Cancelar</a></button>
+                
             </form>
+            <a  class="a" href='./index_usuario.php'>Volver</a>
     <?php
         }
     } else {

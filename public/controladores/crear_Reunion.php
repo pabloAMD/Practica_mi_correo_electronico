@@ -36,15 +36,14 @@
     $id_usuario = $_SESSION['id'];
 
     $fecha = isset($_POST["fecha"]) ? trim($_POST["fecha"]) : null;
-    $hora = isset($_POST["hora"]) ? mb_strtoupper(trim($_POST["hora"]), 'UTF-8') : null;
+    $hora = isset($_POST["hora"]) ? mb_strtoupper(trim($_POST["hora"]) ) : null;
     $lugar = isset($_POST["lugar"]) ? mb_strtoupper(trim($_POST["lugar"]), 'UTF-8') : null;
     $latitud = isset($_POST["latitud"]) ? mb_strtoupper(trim($_POST["latitud"]), 'UTF-8') : null;
     $longitud = isset($_POST["longitud"]) ? trim($_POST["longitud"]) : null;
     $motivo = isset($_POST["motivo"]) ? trim($_POST["motivo"]) : null;
-    /*$fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]) : null;*/
     $observaciones = isset($_POST["observaciones"]) ? trim($_POST["observaciones"]) : null;
 
-    $sql = "INSERT INTO reunion VALUES ($id_reuniones,'$fecha', '$hora', '$lugar', '$latitud', '$longitud','$motivo', '$observaciones',  'N')";
+    $sql = "INSERT INTO reunion VALUES ('$id_reuniones','$fecha', '$hora', '$lugar', '$latitud', '$longitud','$motivo', '$observaciones', 'N')";
     if ($conn->query($sql) === TRUE) {
         echo "<p>Se ha creado los datos de la reunion correctamemte!!!</p>";
 

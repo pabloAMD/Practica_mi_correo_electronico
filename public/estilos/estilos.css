@@ -43,7 +43,7 @@ table{
     border: rgb(14, 10, 10) 5px solid;
     margin: 15px;
     padding: 15px;
-    background: rgb(212, 192, 192);
+    background: rgb(103, 191, 202);
     
 
 }
@@ -69,7 +69,7 @@ td{
     border: rgb(14, 10, 10) 1px solid;
     margin: 15px;
     padding: 15px;
-    text-decoration-color: aliceblue;
+    text-decoration-color: rgb(240, 248, 255);
 }
 
 .login{
@@ -97,7 +97,7 @@ td{
 }
 .a:hover{
     color: lightblue;
-    counter-reset: ;
+    
 }
 
 section{
@@ -128,4 +128,23 @@ form{
     padding: 5px;
     width: 60%;
     
+}
+
+.control{
+    text-align: right;
+}
+
+.control button{
+    
+    text-decoration: none;
+    width: 200px;
+    padding: 10px 10px;
+}
+.control button a{
+    font-weight: bolder;
+    color: #000;
+    text-decoration: none;
+}
+.control button a:hover{
+    color:rgb(103, 191, 202)
 }

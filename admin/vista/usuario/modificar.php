@@ -53,6 +53,7 @@
                 <input type="submit" id="modificar" name="modificar" value="Modificar" />
                 
             </form>
+            <a  class="a" href='./index_usuario.php'>Volver</a>
     <?php
         }
     } else {
