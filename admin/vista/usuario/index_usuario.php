@@ -15,11 +15,6 @@
     }
     ?>
     <h2>Datos personales </h2>
-    <form class="busqueda">
-    <input  type="date" id="buscar" name="buscar" value="" placeholder="Fecha..."/>
-    </form>
-  
-  
 
     <div class="control">
         <button><a href='../../../public/vista/crear_Reunion.html'>Crear Reunion</a></button>
@@ -43,8 +38,7 @@
 
         include '../../../config/conexionBD.php';
 
-        echo "valor :" . $_SESSION['usu'];
-        echo "valor :" . $_SESSION['contra'];
+        
         $aux = $_SESSION['usu'];
         $aux1 = $_SESSION['contra'];
 
@@ -55,7 +49,7 @@
 
         if ($result->num_rows > 0) {
 
-            echo "Usuarios";
+            
             while ($row = $result->fetch_assoc()) {
                 $id_sql = $row["usu_id"];
 
@@ -133,7 +127,7 @@
 
         if ($result1->num_rows > 0) {
 
-            echo "Reuniones";
+            
             while ($row1 = $result1->fetch_assoc()) {
 
                 echo "<tr>";
@@ -219,7 +213,7 @@
 
         if ($result1->num_rows > 0) {
 
-            echo "Reuniones";
+            
             while ($row1 = $result1->fetch_assoc()) {
 
                 echo "<tr>";

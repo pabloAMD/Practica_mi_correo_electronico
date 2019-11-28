@@ -31,7 +31,7 @@
         "usu_modificacion = '$fecha' " .
         "WHERE usu_id = $codigo";
     if ($conn->query($sql) === TRUE) {
-        echo "Se ha actualizado los datos personales correctamemte!!!<br>";
+        
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
     }
